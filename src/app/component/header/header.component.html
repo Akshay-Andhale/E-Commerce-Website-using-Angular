@@ -1,0 +1,37 @@
+<header>
+    <div class="navbar bg-dark shadow-sm">
+        <div class="navbar-brand align-item-center d-flex">
+            <i class="fas fa-shipping-fast">&nbsp;
+            </i>
+            <a routerLink="/products" class="shoppe"><strong style="color: yellow;">ShopPe</strong></a>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search here">
+            </div>
+            <span class="fas fa-search search-icon"></span>
+            <div class="about">
+                <a routerLink="/about">About Us </a>
+            </div>
+            <div class="contact">
+                <a routerLink="/contact">Contact Us </a>
+            </div>
+            <!-- <div class="login">
+                <a class="btn btn-primary" routerLink="/login">Login </a>
+            </div>
+            <div class="signup">
+                <a class="btn btn-primary" routerLink="/signup">SignUp</a>
+            </div> -->
+
+            <div >
+                <!-- <a class="btn btn-primary login" routerLink="/login">Login </a> -->
+                <!-- <a class="btn btn-primary signup" routerLink="/signup">SignUp</a> -->
+                <a class="btn btn-primary logout" routerLink="/login">Logout</a>
+            </div>
+
+
+        </div>
+        <button routerLink="cart" class="btn btn-primary">
+            <i style="font-size: 25px;" class="fas fa-cart-plus"></i>
+            <div class="badge bg-danger">{{totalItem}}</div>
+        </button>
+    </div>
+</header>

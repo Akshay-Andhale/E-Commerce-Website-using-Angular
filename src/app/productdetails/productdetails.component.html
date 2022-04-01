@@ -1,0 +1,31 @@
+
+
+<table class="table" border="2">
+
+    <thead>
+        <tr>
+            <td>Title</td>
+            <td>Image</td>
+            <td>Ratings</td>
+            <td>Description</td>
+            <td>Price</td>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>{{detailsList.title}}</td>
+            <td><img style="width: 150px; height: 150px;" src="{{detailsList.image}}" ></td>
+            <td>{{detailsList.rating['rate']}}</td>
+            <td>{{detailsList.description}}</td>
+            <td>{{detailsList.price*10 | currency:'INR'}}</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="d-flex" style="justify-content: center;">
+    <button class="btn btn-success btn1" (click)="addToCart(detailsList)">Add to cart</button>
+    <span>
+        <a routerLink="/products"><button class="btn btn-success btn2">Home</button></a>
+    </span>
+</div>

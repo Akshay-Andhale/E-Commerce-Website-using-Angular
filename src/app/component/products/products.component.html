@@ -1,0 +1,36 @@
+<div class="card-top container-fluid">
+    <div class="container d-flex head">
+        <div class="item">
+            <a class="btn btn-danger" style="cursor: pointer;" (click)="filter('')">All</a>
+        </div>
+
+        <div class="item">
+            <a class="btn btn-danger" style="cursor: pointer;" (click)="filter('electronics')">Electronics</a>
+        </div>
+
+        <div class="item">
+            <a class="btn btn-danger" style="cursor: pointer;" (click)="filter('clothing')">Clothing</a>
+        </div>
+
+        <div class="item">
+            <a class="btn btn-danger" style="cursor: pointer;" (click)="filter('jewelery')">Jewelery</a>
+        </div>
+
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor="let item of filterCategory">
+            <div class="card col-md-3">
+                <!-- <img src="{{item.image}}" (click)="sendId(item.id)"> -->
+                <a [routerLink]="['/productdetails',item.id]" ><img src="{{item.image}}"></a>
+                <h6 style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 50ch;">{{item.title}}</h6>
+                <p style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 90ch;">{{item.description}}</p>
+                <p>Price: {{item.price*10|currency:'INR'}}</p>
+                <button class="btn btn-primary" (click)="addToCart(item)">Add to cart</button>
+            </div>
+        </ng-container>
+        
+    </div>
+</div>

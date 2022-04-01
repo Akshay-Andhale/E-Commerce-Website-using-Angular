@@ -1,0 +1,42 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "signUpUsers": [
+    {
+      "fullname": "Akshay Andhale",
+      "mobile": "9270959595",
+      "email": "Akshay@gmail.com",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "fullname": "akshay",
+      "mobile": "2233",
+      "email": "ak@gmail.com",
+      "password": "123",
+      "id": 2
+    },
+    {
+      "fullname": "sachin",
+      "mobile": "0000",
+      "email": "sachin@gmail.com",
+      "password": "123",
+      "id": 3
+    },
+    {
+      "fullname": "Ajit Kumar",
+      "mobile": "1111",
+      "email": "ajit@gmail.com",
+      "password": "123",
+      "id": 4
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

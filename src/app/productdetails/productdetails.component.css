@@ -1,0 +1,13 @@
+tr,td{
+    border: 2px solid black;
+}
+
+.btn1{
+    background-color: rgb(53, 204, 154);
+}
+
+.btn2{
+    background-color: rgb(204, 53, 129);
+    margin-left: 150px;
+    display: inline;
+}
